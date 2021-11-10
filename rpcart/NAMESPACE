@@ -1,2 +1,3 @@
-export(opt.pcart.cat)
-export(opt.pcart.cat.bdeu)
+useDynLib(rpcart, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")
